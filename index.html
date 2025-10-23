@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque d'Ebooks - Collection Complète</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px 25px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .section-title {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .links-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border-left: 4px solid #667eea;
+        }
+        
+        .link-item:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateX(10px);
+        }
+        
+        .link-icon {
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+        
+        .link-content {
+            flex: 1;
+        }
+        
+        .link-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        
+        .link-description {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        .bonus-tag {
+            background: #ffd700;
+            color: #333;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            margin-top: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .stats {
+                gap: 15px;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Bibliothèque d'Ebooks Complète</h1>
+            <p class="subtitle">Votre collection ultime de ressources numériques</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">300K+</div>
+                    <div>Ebooks Anglais</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div>Ebooks Français</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1238</div>
+                    <div>Chefs d'œuvre</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">🎁 Offre Basique</h2>
+            <div class="links-grid">
+                <a href="https://mega.nz/file/4R9lGbxY#2hx26aV73Z4abGs7OUmzVEBzmeSxtKrxbfqNhFABpKI" class="link-item" target="_blank">
+                    <span class="link-icon">📖</span>
+                    <div class="link-content">
+                        <div class="link-title">1238 Chefs-d'œuvre du Domaine Public</div>
+                        <div class="link-description">Collection de littérature française classique</div>
+                    </div>
+                </a>
+                
+                <a href="https://mega.nz/folder/wdNyGYLZ#50zOU8E9hsKFHhL-EfPPiA" class="link-item" target="_blank">
+                    <span class="link-icon">📚</span>
+                    <div class="link-content">
+                        <div class="link-title">150 Ebooks Français</div>
+                        <div class="link-description">Sélection variée en français</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/131akYXfrxGPzt0GAwpOnpfH5Pfc9mJeV?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">💼</span>
+                    <div class="link-content">
+                        <div class="link-title">3300 Ebooks à Trier</div>
+                        <div class="link-description">Pour lecture personnelle ou revente (à trier attentivement)</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1eQ2yNXyywEGCMFofkn8eUXuPQPnPFiLm?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">💎</span>
+                    <div class="link-content">
+                        <div class="link-title">6000 Ebooks à Trier</div>
+                        <div class="link-description">Collection massive pour lecture ou revente (à trier attentivement)</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1vY9E6pukF-SpTlJYsp-VI26GbbIxx7Pi?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🎁</span>
+                    <div class="link-content">
+                        <div class="link-title">100+ Articles Anglais <span class="bonus-tag">BONUS</span></div>
+                        <div class="link-description">Articles intéressants en anglais</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/file/d/1P4yUBMfFJFatmnMlLt7j4KO5wd04vGuu/view?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🎁</span>
+                    <div class="link-content">
+                        <div class="link-title">60 Ebooks Bonus</div>
+                        <div class="link-description">Collection bonus supplémentaire</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/file/d/1CCmjUtA8ZIk1-XtbP5BUPLhaEZfcCPqT/view?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🌍</span>
+                    <div class="link-content">
+                        <div class="link-title">542 Ebooks Bilingues (Partie 1)</div>
+                        <div class="link-description">272 français + 272 anglais</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/file/d/1jO16IDFiIZuEUARB9a-eDWZ_LEiG2XC8/view?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🌍</span>
+                    <div class="link-content">
+                        <div class="link-title">Ebooks Bilingues (Partie 2)</div>
+                        <div class="link-description">Suite de la collection bilingue</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1SLGcpDVYQWd0ZM-g7F8deOOY0itvczqN" class="link-item" target="_blank">
+                    <span class="link-icon">🧠</span>
+                    <div class="link-content">
+                        <div class="link-title">Développement Personnel <span class="bonus-tag">BONUS</span></div>
+                        <div class="link-description">Ressources pour votre croissance personnelle</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/10xeU6DjkiTALR0TNtqbvhs-rQIntsxHL" class="link-item" target="_blank">
+                    <span class="link-icon">📕</span>
+                    <div class="link-content">
+                        <div class="link-title">32 Ebooks Français Libres de Droits <span class="bonus-tag">BONUS</span></div>
+                        <div class="link-description">Totalement libres de droits</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1mT3dA2_XaQxoH61rJSnIzZ6vgAjErZ64?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🎁</span>
+                    <div class="link-content">
+                        <div class="link-title">125 Ebooks Bonus</div>
+                        <div class="link-description">Collection supplémentaire variée</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/15BkLxl1FcuGbpR91JtA954bLdufOiewx" class="link-item" target="_blank">
+                    <span class="link-icon">🧘</span>
+                    <div class="link-content">
+                        <div class="link-title">Bien-être</div>
+                        <div class="link-description">Ressources santé et bien-être</div>
+                    </div>
+                </a>
+                
+                <a href="https://mega.nz/folder/sINGiAIJ#TklHZwlakjTgBpPKXbb_dg" class="link-item" target="_blank">
+                    <span class="link-icon">🚀</span>
+                    <div class="link-content">
+                        <div class="link-title">300,000 Ebooks PLR Anglais (3.8 Go) <span class="bonus-tag">BONUS</span></div>
+                        <div class="link-description">Collection massive PLR en anglais</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/file/d/1U7Jh4ct9CFARM7IcDbY4Tn60qO2MLM9x/view?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🇬🇧</span>
+                    <div class="link-content">
+                        <div class="link-title">146 Ebooks Anglais (Partie 1) <span class="bonus-tag">BONUS</span></div>
+                        <div class="link-description">Collection anglaise</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/file/d/1O8itc3h4eFHRBiEVsPJxYUFhg5ciF-2C/view?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🇬🇧</span>
+                    <div class="link-content">
+                        <div class="link-title">146 Ebooks Anglais (Partie 2)</div>
+                        <div class="link-description">Suite de la collection anglaise</div>
+                    </div>
+                </a>
+                
+                <a href="https://mega.nz/folder/ERtzxaqQ#gtx7GF15ssOjbTf_zrGJ3A" class="link-item" target="_blank">
+                    <span class="link-icon">📚</span>
+                    <div class="link-content">
+                        <div class="link-title">2000 Ebooks Anglais</div>
+                        <div class="link-description">Grande collection en anglais</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">⭐ Options Supplémentaires</h2>
+            <div class="links-grid">
+                <a href="https://drive.google.com/drive/folders/1l5koBFWvWrv_CfLHaHAiJKvE-52Co0Xn?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">📖</span>
+                    <div class="link-content">
+                        <div class="link-title">1. Littérature Française - Domaine Public (1238)</div>
+                        <div class="link-description">Chefs-d'œuvre classiques français</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1LfXYMxW2NCaq_wFwDXiqeN8pV-zg9GFx?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">💼</span>
+                    <div class="link-content">
+                        <div class="link-title">2. Business & Informatique (216 + 17)</div>
+                        <div class="link-description">Ressources business et tech</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1vnU8JFIozqgCFpxjOCe4Xe6Tw5YqVaNY?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">💪</span>
+                    <div class="link-content">
+                        <div class="link-title">3. Santé + Bien-être + Sport (266)</div>
+                        <div class="link-description">Collection complète santé et fitness</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1g79tXMNmj0r91F7XSmWY3VlIaejSJH7D?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🌟</span>
+                    <div class="link-content">
+                        <div class="link-title">4. Développement Personnel (90)</div>
+                        <div class="link-description">Croissance et amélioration personnelle</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1ISIJa7LujSNUVGid5OTVf36P7E0G5lpj?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🎯</span>
+                    <div class="link-content">
+                        <div class="link-title">5. Livres Niches Français + Anglais (67)</div>
+                        <div class="link-description">Thématiques spécialisées</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1CuBu-r0cMvyvA4SVSWim5MPOQfB0ZOm1?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">💰</span>
+                    <div class="link-content">
+                        <div class="link-title">6. Vente en Ligne + Marketing + Argent (141)</div>
+                        <div class="link-description">E-commerce et marketing digital</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1G3oEgr06hitYhHpoTA1TbHo8qb6zCS5s?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">📚</span>
+                    <div class="link-content">
+                        <div class="link-title">7. Ebooks Français Intéressants (284)</div>
+                        <div class="link-description">Sélection qualitative française</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1C9ceykXD1paRbQ_iqt_fMY-f1cSuCmZF?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">❤️</span>
+                    <div class="link-content">
+                        <div class="link-title">8. Apprendre la Séduction</div>
+                        <div class="link-description">Guides relationnels</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1LEmSUh5KBA_pFkjElmJ41S73z6VoYF2I?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🍲</span>
+                    <div class="link-content">
+                        <div class="link-title">9. Recettes Africaines</div>
+                        <div class="link-description">Un ebook de cuisine africaine</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1jIi1nP4lYhm2W9ZyxBHwgfVeVryW_FdO?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🥘</span>
+                    <div class="link-content">
+                        <div class="link-title">10. Cuisine Maghrébine (24 ebooks)</div>
+                        <div class="link-description">Tunisie, Algérie, Maroc</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1EjGI7bl-gcZnsh6Mxs1JjlFybu52AM2A?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🍜</span>
+                    <div class="link-content">
+                        <div class="link-title">11. Cuisine Asiatique (6 ebooks)</div>
+                        <div class="link-description">Recettes asiatiques variées</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1eFV1v4E2a26TD90UnTMFxOyk9cMV_2hG?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🍽️</span>
+                    <div class="link-content">
+                        <div class="link-title">12. Cuisine Europe et Autres (97 ebooks)</div>
+                        <div class="link-description">Grande collection de recettes</div>
+                    </div>
+                </a>
+                
+                <a href="https://drive.google.com/drive/folders/1YRGpnbUKBx8ulADnIgKb-YKRyvaXXAAN?usp=sharing" class="link-item" target="_blank">
+                    <span class="link-icon">🎁</span>
+                    <div class="link-content">
+                        <div class="link-title">13. Collection Bonus Supplémentaire</div>
+                        <div class="link-description">Ressources additionnelles</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <h3>🎉 Bonne chance pour votre projet !</h3>
+            <p style="margin-top: 10px; opacity: 0.9;">Cette page regroupe toute votre collection d'ebooks en un seul endroit.</p>
+            <p style="margin-top: 5px; font-size: 0.9em;">Partagez simplement le lien de cette page pour donner accès à toutes les ressources.</p>
+        </footer>
+    </div>
+</body>
+</html>
